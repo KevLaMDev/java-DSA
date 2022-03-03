@@ -69,7 +69,16 @@ public class linkedListTest {
         LinkedList sut = new LinkedList();
         sut.insert(8);
         sut.append(9);
-//        assert(sut.tail.value == 9);
+        Node currentNode = sut.head;
+        int[] testArr = new int[2];
+        int[] controlArr = {8, 9};
+        int index = 0;
+        while(currentNode != null) {
+            testArr[index] = currentNode.value;
+            currentNode = currentNode.next;
+            index++;
+        }
+        assert(Arrays.equals(controlArr, testArr));
     }
     @Test
     public void testInsertBefore() {
@@ -77,7 +86,7 @@ public class linkedListTest {
         sut.insert(11);
         sut.insert(9);
         sut.insertBefore(11, 10);
-        int[] testArr = {9, 10 ,11};
+        int[] testArr = {11, 10 ,9};
         int index = 2;
         int[] nodeValuesArr = new int[3];
         Node currentNode = sut.head;
@@ -106,7 +115,7 @@ public class linkedListTest {
         sut.insert(12);
         sut.insert(13);
         sut.insert(15);
-        assert(sut.kthFromEnd(5) == -1);
+        assert(sut.kthFromEnd(5) == null);
     }
     @Test
     public void testKthFromEndKequalsSize() {
@@ -115,7 +124,7 @@ public class linkedListTest {
         sut.insert(12);
         sut.insert(13);
         sut.insert(15);
-        assert(sut.kthFromEnd(4) == -1);
+        assert(sut.kthFromEnd(4) == null);
     }
     @Test
     public void testKthFromEndKisNegative() {
@@ -124,7 +133,7 @@ public class linkedListTest {
         sut.insert(12);
         sut.insert(13);
         sut.insert(15);
-        assert(sut.kthFromEnd(-10) == -1);
+        assert(sut.kthFromEnd(-10) == null);
     }
     @Test
     public void testKthFromEndListSizeIs1() {
