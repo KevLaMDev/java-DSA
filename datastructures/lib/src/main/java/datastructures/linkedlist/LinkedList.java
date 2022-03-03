@@ -29,6 +29,7 @@ public class LinkedList
         while(currentNode != null) {
             // check the VALUE of the Node, not the Node itself
             if (currentNode.value == value) return true; //TODO change this to .equals when using T
+            currentNode = currentNode.next;
         }
         return false;
     }
@@ -54,14 +55,16 @@ public class LinkedList
         Node newNode = new Node(newVal);
         Node currentNode = head;
         Node temp;
-        // TODO handle null pointer exception in while loop condition
-        while(currentNode.next != null) {
-            if (currentNode.next.value == value) {
-                temp = currentNode.next;
-                currentNode.next = newNode;
-                newNode.next = temp;
-            } else {
-                currentNode = currentNode.next;
+        if (currentNode != null) {
+            while (currentNode.next != null) {
+                if (currentNode.next.value == value) {
+                    temp = currentNode.next;
+                    currentNode.next = newNode;
+                    newNode.next = temp;
+                    break;
+                } else {
+                    currentNode = currentNode.next;
+                }
             }
         }
     }
@@ -84,6 +87,7 @@ public class LinkedList
     public Integer kthFromEnd(int k) {
         if (k < 0) return null;
         Node currentNode = head;
+        if (currentNode == null) return null;
         while(currentNode != null) {
             size++;
             currentNode = currentNode.next;
