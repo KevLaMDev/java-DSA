@@ -1,7 +1,7 @@
 package datastructures.stack;
 
 public class Stack {
-    Node top = null;
+    public Node top = null;
 
     public void push(int value) {
         Node newNode = new Node(value);
