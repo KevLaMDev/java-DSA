@@ -7,3 +7,4 @@
 ## Code Challenge 6: [Linked-list-insertions](./datastructures/linked-list-insertions-readme.md)
 ## Code Challenge 7: [Linked-list-kth](./datastructures/linked-list-kth-from-end-readme.md)
 ## Code Challenge 8: [Linked-list-zip](./datastructures/linked-list-zip.md)
+## Code Challenge 10: [Stacks-Queues](./datastructures/stacks-queues.md)

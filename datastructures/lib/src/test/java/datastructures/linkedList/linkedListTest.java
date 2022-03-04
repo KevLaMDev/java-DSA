@@ -2,7 +2,6 @@ package datastructures.linkedList;
 
 import datastructures.linkedlist.LinkedList;
 import datastructures.linkedlist.Node;
-import org.checkerframework.framework.qual.LiteralKind;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
