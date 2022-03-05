@@ -1,7 +1,7 @@
 package datastructures.queue;
 
 public class Node {
-    int value;
+    public int value;
     Node next = null;
 
     public Node(int value) {

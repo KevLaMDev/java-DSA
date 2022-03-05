@@ -18,4 +18,5 @@ public class PseudoQueueTest {
         sut.FIFO.pop();
         assert(sut.FIFO.top.value == 15);
     }
+
 }
