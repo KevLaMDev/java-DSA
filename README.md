@@ -9,3 +9,4 @@
 ## Code Challenge 8: [Linked-list-zip](./datastructures/linked-list-zip.md)
 ## Code Challenge 10: [Stacks-Queues](./datastructures/stacks-queues.md)
 ## Code Challenge 11: [Pseudo-Queue](./datastructures/Pseudo-queues.md)
+## Code Challenge 12: [Animal-Shelter](./datastructures/stack-queue-animal-shelter.md)

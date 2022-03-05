@@ -1,8 +1,8 @@
 package datastructures.queue;
 
 public class Queue {
-    Node rear = null;
-    Node front = null;
+    public Node rear = null;
+    public Node front = null;
 
     public void enqueue(int value) {
         Node newNode = new Node(value);
