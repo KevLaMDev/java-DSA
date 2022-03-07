@@ -10,3 +10,5 @@
 ## Code Challenge 10: [Stacks-Queues](./datastructures/stacks-queues.md)
 ## Code Challenge 11: [Pseudo-Queue](./datastructures/Pseudo-queues.md)
 ## Code Challenge 12: [Animal-Shelter](./datastructures/stack-queue-animal-shelter.md)
+## Code Challnege 13: []()
+## Code Challenge 15: [Binary-Tree-and-BST-Implementation](./datastructures/binary-tree-and-BST-implementation.md)
