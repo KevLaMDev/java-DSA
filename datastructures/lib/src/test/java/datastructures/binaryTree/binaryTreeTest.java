@@ -86,5 +86,14 @@ public class binaryTreeTest {
         bst.add(10);
         assert(bst.bstContains(11) == false);
     }
+    @Test
+    void findMaxTest() {
+        BinarySearchTree bt = new BinarySearchTree();
+        bt.add(1);
+        bt.add(2);
+        bt.add(6);
+        bt.add(5);
+        assert(bt.findMaxValue() == 6);
+    }
 
 }

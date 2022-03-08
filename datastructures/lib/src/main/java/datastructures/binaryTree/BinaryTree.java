@@ -3,6 +3,7 @@ package datastructures.binaryTree;
 import java.util.ArrayList;
 
 public class BinaryTree {
+    int max = 0;
     Node root = null;
     ArrayList<Integer> nodeValueArrayList;
 
@@ -18,6 +19,12 @@ public class BinaryTree {
         nodeValueArrayList.add(currentNode.value);
         if (currentNode.leftChild != null) preOrderRecursiveAuxiliary(currentNode.leftChild);
         if (currentNode.rightChild != null) preOrderRecursiveAuxiliary(currentNode.rightChild);
+    }
+
+    public void preOrderTraverse(Node currentNode) {
+        if (currentNode.value > max) max = currentNode.value;
+        if (currentNode.leftChild != null) preOrderTraverse(currentNode.leftChild);
+        if (currentNode.rightChild != null) preOrderTraverse(currentNode.rightChild);
     }
 
     public Object[] postOrder() {
@@ -48,5 +55,11 @@ public class BinaryTree {
         if (currentNode.rightChild != null) inOrderRecursiveAuxiliary(currentNode.rightChild);
     }
 
+    public Integer findMaxValue() {
+        Node currentNode = root;
+        if (currentNode == null) return null;
+        preOrderTraverse(currentNode);
+        return max;
+    }
 
 }
