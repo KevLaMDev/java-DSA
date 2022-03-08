@@ -12,3 +12,4 @@
 ## Code Challenge 12: [Animal-Shelter](./datastructures/stack-queue-animal-shelter.md)
 ## Code Challnege 13: []()
 ## Code Challenge 15: [Binary-Tree-and-BST-Implementation](./datastructures/binary-tree-and-BST-implementation.md)
+## Code Challenge 16: [Binary-Tree-Max-Value](./datastructures/binary-tree-max-value.md)
