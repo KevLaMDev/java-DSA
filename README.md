@@ -14,5 +14,5 @@
 ## Code Challenge 15: [Binary-Tree-and-BST-Implementation](./datastructures/binary-tree-and-BST-implementation.md)
 ## Code Challenge 15: [Binary-Tree-and-BST-Implementation](./datastructures/binary-tree-and-BST-implementation.md)
 ## Code Challenge 16: [Binary-Tree-Max-Value](./datastructures/binary-tree-max-value.md)
-## COde Challenge 17: [Breadth-First-Search](./datastructures/breadth-first-traversal.md)
+## Code Challenge 17: [Breadth-First-Search](./datastructures/breadth-first-traversal.md)
 
