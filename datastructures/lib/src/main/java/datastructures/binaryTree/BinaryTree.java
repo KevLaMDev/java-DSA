@@ -1,6 +1,7 @@
 package datastructures.binaryTree;
 
 import java.util.ArrayList;
+import java.util.Queue;
 
 public class BinaryTree {
     int max = 0;
@@ -60,6 +61,21 @@ public class BinaryTree {
         if (currentNode == null) return null;
         preOrderTraverse(currentNode);
         return max;
+    }
+
+    public Object[] breadthFirst() {
+        Node currentNode = root;
+        ArrayList<Integer> nodeValArrayList = new ArrayList<>();
+        if (currentNode == null) return nodeValArrayList.toArray();
+        ArrayList<Node> Queue = new ArrayList<>();
+        Queue.add(currentNode);
+        while(Queue.size() > 0) {
+            Node front = Queue.remove(0);
+            nodeValArrayList.add(front.value);
+            if (front.leftChild != null) Queue.add(front.leftChild);
+            if (front.rightChild != null) Queue.add(front.rightChild);
+        }
+        return nodeValArrayList.toArray();
     }
 
 }
