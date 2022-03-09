@@ -15,6 +15,7 @@ public class Queue {
         }
     }
 
+
     public Integer peek() {
         if (front == null) return null;
         return front.value;

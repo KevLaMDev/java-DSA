@@ -86,5 +86,33 @@ public class binaryTreeTest {
         bst.add(10);
         assert(bst.bstContains(11) == false);
     }
+    @Test
+    void findMaxTest() {
+        BinarySearchTree bt = new BinarySearchTree();
+        bt.add(1);
+        bt.add(2);
+        bt.add(6);
+        bt.add(5);
+        assert(bt.findMaxValue() == 6);
+    }
+
+    @Test
+    void bfsTest() {
+        BinarySearchTree bst = new BinarySearchTree();
+        bst.add(6);
+        bst.add(4);
+        bst.add(3);
+        bst.add(5);
+        bst.add(9);
+        bst.add(7);
+        bst.add(10);
+        Object[] testArr = {6, 4, 9, 3, 5, 7, 10};
+        assert(Arrays.equals(bst.breadthFirst(), testArr));
+        /* tree diagram:
+             6
+          4     9
+        3   5  7  10
+         */
+    }
 
 }
