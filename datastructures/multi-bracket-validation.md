@@ -33,6 +33,6 @@ Time complexity of the algorithm is O(n), as we iterate through the string one c
             }
         }
         if (stack.empty()) return true;
-        return false;
+        return false; 
     }
 ```
