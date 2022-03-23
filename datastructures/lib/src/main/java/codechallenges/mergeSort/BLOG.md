@@ -1,0 +1,1 @@
+![image](../../../../../../../datastructures/code-challenge-27.png)
