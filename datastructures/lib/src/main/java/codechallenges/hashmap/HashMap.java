@@ -75,6 +75,16 @@ public class HashMap<K, V>
         return listOfKeys;
     }
 
+    public List<HashMapPair<K, V>> entries() {
+        List<HashMapPair<K, V>> entriesList= new ArrayList<>();
+        for (LinkedList<HashMapPair<K, V>> linkedList : bucketArrayList) {
+            for (HashMapPair<K, V> hashMapPair : linkedList) {
+                entriesList.add(hashMapPair);
+            }
+        }
+        return entriesList;
+    }
+
     public int hash(K key) {
         return Math.abs(key.hashCode()) % size;
     }
