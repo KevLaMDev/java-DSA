@@ -1,6 +1,6 @@
 package datastructures;
 
-import codechallenges.hashmap.HashMap;
+import datastructures.hashmap.HashMap;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
