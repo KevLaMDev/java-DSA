@@ -1,10 +1,9 @@
 package codechallenges;
 
-import codechallenges.hashmap.HashMap;
-import codechallenges.hashmap.HashMapPair;
+import datastructures.hashmap.HashMap;
+import datastructures.hashmap.HashMapPair;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class WordRepeater {
 

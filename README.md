@@ -17,4 +17,5 @@
 ## Code Challenge 17: [Breadth-First-Search](./datastructures/breadth-first-traversal.md)
 ## Code Challenge 18: [FizzBuzz-k-ary-tree](./datastructures/tree-fizz-buzz.md)
 ## Code Challenge 30: [Hash-Map](./datastructures/hashMap.md)
-## Code Challenge 30: [Tree-Intersection](./datastructures/tree-intersection.md)
+## Code Challenge 32: [Tree-Intersection](./datastructures/tree-intersection.md)
+## Code Challenge 33: [Hashmap-Left-Join](./datastructures/hashmap-left-join.md)

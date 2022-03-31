@@ -1,4 +1,4 @@
-package codechallenges.hashmap;
+package datastructures.hashmap;
 
 
 import java.util.ArrayList;

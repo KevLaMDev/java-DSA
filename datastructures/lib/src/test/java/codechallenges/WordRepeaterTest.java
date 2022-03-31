@@ -1,7 +1,6 @@
-package datastructures;
+package codechallenges;
 
 import codechallenges.WordRepeater;
-import codechallenges.hashmap.HashMap;
 import org.junit.jupiter.api.Test;
 
 public class WordRepeaterTest {
