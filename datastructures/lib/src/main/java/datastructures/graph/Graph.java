@@ -1,16 +1,15 @@
-package datastructures.graph;
+ package datastructures.graph;
 
 import datastructures.hashmap.HashMap;
+
 
 
 import javax.sound.sampled.Line;
 import java.beans.VetoableChangeListener;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
-public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<T>> {
+ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<T>> {
     public HashMap<Vertex<T>, LinkedList<Edge<T>>> adjacencyLists;
     private int numberOfVertices = 0;
     private ArrayList<T> listOfVerticeNames = new ArrayList<>();
@@ -90,5 +89,30 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
     public String toString()
     {
         return "";
+    }
+
+    public ArrayList<Vertex<T>> BFSgraph(Vertex<T> start) {
+        ArrayList<Vertex<T>> result = new ArrayList<>();
+        Deque<Vertex<T>> bfsQueue = new ArrayDeque<>();
+        HashMap<Vertex<T>, Integer> visitedVertices = new HashMap<>(size() * 2);
+        bfsQueue.addLast(start);
+        Vertex<T> currentVertex = null;
+        visitedVertices.set(start, 1);
+        while(!bfsQueue.isEmpty()) {
+            currentVertex = bfsQueue.removeFirst();
+            result.add(currentVertex);
+//            for (Edge<T> neighbor : getNeighbors(currentVertex)) {
+//                if (!visitedVertices.contains(neighbor.destination)) {
+//                    visitedVertices.set(neighbor.destination, 1);
+//                    bfsQueue.addLast(neighbor.destination);
+//                }
+            for (int i = getNeighbors(currentVertex).size()-1; i >= 0; i--) {
+                if (!visitedVertices.contains(getNeighbors(currentVertex).get(i).destination)) {
+                    visitedVertices.set(getNeighbors(currentVertex).get(i).destination, 1);
+                    bfsQueue.addLast(getNeighbors(currentVertex).get(i).destination);
+                }
+            }
+        }
+        return result;
     }
 }
