@@ -18,12 +18,18 @@ public class Vertex<T extends Comparable<? super T>> implements Comparable<Verte
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Vertex<?> vertex = (Vertex<?>) o;
-        return Object.equals(value, vertex.value);
+        return false;
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(value);
+    }
+
+    @Override
+    public String toString() {
+        return "Vertex{" +
+                "value=" + value +
+                '}';
     }
 }

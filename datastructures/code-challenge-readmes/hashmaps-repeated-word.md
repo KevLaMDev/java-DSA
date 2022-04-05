@@ -4,7 +4,7 @@ Write a function called repeated word that finds the first word to occur more th
 - Return: string
 
 ## Whiteboard Process
-![image](code-challenge-31.png)
+![image](../code-challenge-whiteboards/code-challenge-31.png)
 
 ## Approach & Efficiency
 - I used the split method and replaceAll method with regex to split the string into an array of words, removing all non-letter characters and making all letters lowercase for consistency.

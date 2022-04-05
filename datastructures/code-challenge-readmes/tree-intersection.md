@@ -3,7 +3,7 @@ Write a function called tree_intersection that takes two binary trees as paramet
 Using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
 
 ## Whiteboard Process
-![image](code-challenge-32.png)
+![image](../code-challenge-whiteboards/code-challenge-32.png)
 
 ## Approach & Efficiency
 - The algo uses a hashmap and an array to store values.

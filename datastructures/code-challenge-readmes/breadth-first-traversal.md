@@ -4,7 +4,7 @@
 - Return: list of all values in the tree, in the order that they were encountered
 
 ## Whiteboard Process
-![image](code-challenge-17.png)
+![image](../code-challenge-whiteboards/code-challenge-17.png)
 
 ## Approach & Efficiency
 The breadth first search employs a queue data structure to keep track of each node level.

@@ -5,7 +5,7 @@ Write a function called left join
 - The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
 - Return: The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
 ## Whiteboard Process
-![image](code-challenge-33.png)
+![image](../code-challenge-whiteboards/code-challenge-33.png)
 
 ## Approach & Efficiency
 - The approach uses a hash map to store common values found in both input hash maps. 

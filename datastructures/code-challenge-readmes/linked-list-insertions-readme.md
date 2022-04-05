@@ -12,7 +12,7 @@ Write the following methods for the Linked List class:
   - adds a new node with the given new value immediately after the first node that has the value specified
 
 ## Whiteboard Process:
-![image](code-challenge-6.png)
+![image](../code-challenge-whiteboards/code-challenge-6.png)
 
 ## Approach and Efficiency:
 - The time complexity for all the methods is 0(n). This is because each method requires traversal of the linked list and as such is subject to O(n) time complexity

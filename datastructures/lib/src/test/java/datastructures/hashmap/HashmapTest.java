@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.hashmap;
 
 import datastructures.hashmap.HashMap;
 import org.junit.jupiter.api.Test;
