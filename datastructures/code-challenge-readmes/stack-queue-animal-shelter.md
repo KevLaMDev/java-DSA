@@ -13,7 +13,7 @@
     - If pref is not "dog" or "cat" then return null.
 
 ## Whiteboard Process
-![image](code-challenge-12.png)
+![image](../code-challenge-whiteboards/code-challenge-12.png)
 
 ## Approach and Efficiency
 The Animal Shelter class has two Queue class instance variables, a catQueue and a dogQueue. Using the enqueue() method, users can enqueue a dog or cat object.

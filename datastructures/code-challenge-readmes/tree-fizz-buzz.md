@@ -9,7 +9,7 @@
   - If the value is not divisible by 3 or 5, simply turn the number into a String.
 
 ## Whiteboard Process
-![image](code-challenge-18-WIP.png)
+![image](../code-challenge-whiteboards/code-challenge-18-WIP.png)
 
 ## Approach & Efficiency
 

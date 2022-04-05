@@ -10,7 +10,7 @@ Write a function called validate brackets
   - Curly Brackets: {}
 
 ## Whiteboard Process
-![image](code-challenge-13.png)
+![image](../code-challenge-whiteboards/code-challenge-13.png)
 
 ## Approach & Efficiency
 Bracket Validator is a class which contains the method validator, which takes a string as an argument and returns a boolean if the string has valid bracket syntax. 

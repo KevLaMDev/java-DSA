@@ -13,7 +13,7 @@
     - Extracts a value from the PseudoQueue, using a first-in, first-out approach.
 
 ## Whiteboard Process
-![image](code-challange-11.png)
+![image](../code-challenge-whiteboards/code-challange-11.png)
 
 ## Approach & Efficiency
 To do this challenge, I used two stacks as instance variable within the PseudoQueue Class, one named LIFO and the other FIFO. Enqueue is a O(n) operation, depending on how many pre-existing nodes there are in the FIFO stack. Essentially, when the enqueue method is invoked, a new node is instantiated and pushed onto the LIFO stack. This operation is O(1). Then, the LIFO stack is traversed and each node value is pushed onto the FIFO stack, inverting the order of nodes. This operation is O(n), as we have to traverse the entirety of the LIFO stack. 

@@ -7,7 +7,7 @@
 - You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 ## Whiteboard Process
-![image](code-challenge-8.png)
+![image](../code-challenge-whiteboards/code-challenge-8.png)
 
 ## Approach and Efficiency
 In this approach, I used a while loop to traverse both linked lists simultaneously, appending the zipped linked list with each loop. Because of this, the time complexity is O(n)

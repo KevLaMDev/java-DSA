@@ -2,7 +2,7 @@
 Find the maximum value in a Binary Tree
 
 ## Whiteboard Process
-![image](code-challenge-16.png)
+![image](../code-challenge-whiteboards/code-challenge-16.png)
 
 ## Approach & Efficiency
 The method findMax, traverses the tree using a pre-order recursive algorithm. Within this algorithm, a conditional statement checks if the currentNode value is greater than the current value assigned to an int max instance variable
