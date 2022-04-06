@@ -1,6 +1,7 @@
 package datastructures.graph;
 
 
+import java.util.LinkedList;
 
 public class Edge<T extends Comparable<? super T>> implements Comparable<Vertex<T>>
 {

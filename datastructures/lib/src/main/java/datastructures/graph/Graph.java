@@ -101,15 +101,10 @@ import java.util.*;
         while(!bfsQueue.isEmpty()) {
             currentVertex = bfsQueue.removeFirst();
             result.add(currentVertex);
-//            for (Edge<T> neighbor : getNeighbors(currentVertex)) {
-//                if (!visitedVertices.contains(neighbor.destination)) {
-//                    visitedVertices.set(neighbor.destination, 1);
-//                    bfsQueue.addLast(neighbor.destination);
-//                }
-            for (int i = getNeighbors(currentVertex).size()-1; i >= 0; i--) {
-                if (!visitedVertices.contains(getNeighbors(currentVertex).get(i).destination)) {
-                    visitedVertices.set(getNeighbors(currentVertex).get(i).destination, 1);
-                    bfsQueue.addLast(getNeighbors(currentVertex).get(i).destination);
+            for (Edge<T> neighbor : getNeighbors(currentVertex)) {
+                if (!visitedVertices.contains(neighbor.destination)) {
+                    visitedVertices.set(neighbor.destination, 1);
+                    bfsQueue.addLast(neighbor.destination);
                 }
             }
         }
