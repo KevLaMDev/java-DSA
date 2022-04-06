@@ -110,4 +110,13 @@ import java.util.*;
         }
         return result;
     }
+    public LinkedList<Edge<T>> getNeighbors(T vertexValue) {
+        List<Vertex<T>> listOfVertexKeys = getVertices();
+        for (Vertex<T> currentVertex : listOfVertexKeys) {
+            if (currentVertex.value.equals(vertexValue)) {
+                return adjacencyLists.get(currentVertex);
+            }
+        }
+        return null;
+    }
 }

@@ -1,13 +1,17 @@
-package codechallenges;
+# Challenge Summary
+Write a function called business trip
+- Arguments: graph, array of city names
+- Return: cost or null
+- Determine whether the trip is possible with direct flights, and how much it would cost.
 
-import datastructures.graph.Edge;
-import datastructures.graph.Graph;
-import datastructures.graph.Vertex;
+## Whiteboard Process
+![image](../code-challenge-whiteboards/code-challenge-37.png)
 
-import java.util.LinkedList;
+## Approach & Efficiency
+Time complexity is O(n^2) where n is the number of edges, due to having to iterate over an array of vertices, and then iterate over their respective collections of neighbors.
 
-public class BusinessTrip {
-
+## Solution
+```    
     public Integer businessTrip(Graph graph, String[] cities) {
         Integer cost = 0;
         for (int i = 0; i < cities.length - 1; i++) {
@@ -23,9 +27,3 @@ public class BusinessTrip {
         }
         return cost;
     }
-    // boolean isNeighbor = false;
-    // iterate over the returned adjecencyList (List of Edge Objects)
-        // check if currentEdge.destination.value.equals(cities[i])
-            // isNeighbor = true;
-    // if isNeighbor = false return null;
-}
