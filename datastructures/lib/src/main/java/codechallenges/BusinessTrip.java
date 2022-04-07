@@ -23,9 +23,4 @@ public class BusinessTrip {
         }
         return cost;
     }
-    // boolean isNeighbor = false;
-    // iterate over the returned adjecencyList (List of Edge Objects)
-        // check if currentEdge.destination.value.equals(cities[i])
-            // isNeighbor = true;
-    // if isNeighbor = false return null;
 }
