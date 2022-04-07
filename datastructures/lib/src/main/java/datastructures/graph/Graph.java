@@ -13,6 +13,8 @@ import java.util.*;
     public HashMap<Vertex<T>, LinkedList<Edge<T>>> adjacencyLists;
     private int numberOfVertices = 0;
     private ArrayList<T> listOfVerticeNames = new ArrayList<>();
+    private ArrayList<T> verticeValuesArr;
+    private HashMap<Vertex<T>, Integer> visitedVerticesHashMap;
 
     public Graph() {
 
@@ -119,4 +121,26 @@ import java.util.*;
         }
         return null;
     }
+
+    public ArrayList<T> DFSpreorder(Vertex<T> start) {
+        Vertex<T> currentVertex = start;
+        if (currentVertex == null) return null;
+        if (numberOfVertices == 0) return null;
+        verticeValuesArr = new ArrayList<>();
+        visitedVerticesHashMap = new HashMap<>(adjacencyLists.size);
+        DFSTraverse(currentVertex);
+        return verticeValuesArr;
+    }
+
+    public void DFSTraverse(Vertex<T> currentVertex) {
+        visitedVerticesHashMap.set(currentVertex, 1);
+        verticeValuesArr.add(currentVertex.value);
+        LinkedList<Edge<T>> adjacencyList = getNeighbors(currentVertex);
+        for (Edge<T> edge : adjacencyList) {
+            if (!visitedVerticesHashMap.contains(edge.destination)) {
+                DFSTraverse(edge.destination);
+            }
+        }
+    }
+
 }
