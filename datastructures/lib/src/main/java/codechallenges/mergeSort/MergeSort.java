@@ -4,7 +4,7 @@ public class MergeSort {
 
     public MergeSort() { }
 
-    public int[] mergeSort(int[] arr1, int[] arr2) {
+    public int[] merge(int[] arr1, int[] arr2) {
         if (arr1.length < 1) return arr2;
         if (arr2.length < 1) return arr1;
         int i = 0;
@@ -22,21 +22,24 @@ public class MergeSort {
             }
             k += 1;
         }
-        if (i == arr1.length) {
-            for (int a = j; a < arr2.length; a++) {
-                newArr[k] = arr2[a];
-                k += 1;
-                // a ==
-                // arr1 [ 1 , 5 ]
-                // arr2 [ 3 , 4, 8 ]
-                // newArr [ 1, 3]
-            }
-        } else if (j == arr2.length) {
-            for (int a = i; i < arr1.length; a++) {
-                newArr[k] = arr1[a];
-                k += 1;
-            }
+        while (i < arr1.length) {
+            newArr[k] = arr1[i];
+            i++;
+            k++;
+        }
+        while (j < arr2.length) {
+            newArr[k] = arr2[j];
+            j++;
+            k++;
         }
         return newArr;
     }
+
+    // write recursive func that returns an int array
+    // mergeSort(int[] arr)
+    // basecase: arr.length <= 1;
+    // Integer mid = arr.length/2;
+    // int[] left = mergeSort(Arrays.copyOfRange(0, mid - 1))
+    // int[] right = mergeSort(Arrays.copyOfRange(mid);
+    // return merge(left, right);
 }
