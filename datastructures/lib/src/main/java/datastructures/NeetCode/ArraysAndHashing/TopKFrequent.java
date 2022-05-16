@@ -1,15 +1,14 @@
 package datastructures.NeetCode.ArraysAndHashing;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 
-public class topKFrequent {
-    public topKFrequent() {
+public class TopKFrequent {
+    public TopKFrequent() {
     }
 
-    public void getTopKFrequentEls(int k, int[] nums) {
+    public ArrayList getTopKFrequentEls(int k, int[] nums) {
         HashMap<Integer, Integer> hm = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (hm.containsKey(nums[i])) {
@@ -22,13 +21,15 @@ public class topKFrequent {
         }
         ArrayList<ArrayList> arrlist = new ArrayList<>();
         Set keySet = hm.keySet();
-        keySet.iterator()
-        for (int i = 0; i < keySet.size(); i++) {
-            ArrayList<Integer> subarr = new ArrayList<>();
-            arrlist.add(subarr);
-            Integer currKey = keySet[i];
-            subarr.set(0, );
+        for (Object key : keySet) {
+            ArrayList<Integer> subArr = new ArrayList<>();
+            Integer keyNum = (Integer) key;
+            subArr.add(0, keyNum);
+            subArr.add(1, hm.get(key));
+            arrlist.add(subArr);
         }
+        System.out.println(arrlist);
+        return arrlist;
     }
 
     //input: int k, arr of nums
